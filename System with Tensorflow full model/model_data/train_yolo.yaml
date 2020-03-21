@@ -1,0 +1,22 @@
+image-size: [608, 608]
+batch-size:
+  bottlenecks: 8
+  head: 4
+  # the unfreeze model takes more memory
+  full: 2
+epochs:
+  bottlenecks: 25
+  head: 50
+  full: 30
+CB_learning-rate:
+  factor: 0.01
+  patience: 3
+CB_stopping:
+  min_delta: 0
+  patience: 25
+valid-split: 0.1
+generator:
+  augment: false
+  resize_img: true
+  nb_threads: 0.9
+recompute-bottlenecks: false

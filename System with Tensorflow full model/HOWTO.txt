@@ -1,0 +1,16 @@
+1
+
+sudo pip3 install tensorflow==1.15
+
+2
+
+sudo pip3 install keras==2.2.4
+
+3
+
+sudo pip3 install pathos
+
+4
+
+python3 scripts/detection.py --path_weights ./model_data/tiny-yolo_weights_full.h5 --path_anchors ./model_data/tiny-yolo_anchors.csv --path_classes ./train_classes.txt --path_output ./results --path_image ./1.jpg
+
